@@ -32,7 +32,7 @@ public class DCacheJoinDictionaryDriver extends Configured implements Tool {
 		    System.err.println("usage: hadoop jar . . . -files <sidefile> <in> <out>");
 		    System.exit(1);
 	    }
-	    Job job = new Job(getConf(), "james dictionary");
+	    Job job = new Job(getConf(), "distributed system");
 	    job.setJarByClass(DCacheJoinDictionaryDriver.class);
 	    job.setNumReduceTasks(0);
 	    job.setMapperClass(DCacheJoinDictionaryMapper.class);
